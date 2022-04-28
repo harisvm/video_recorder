@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_video/camera_page.dart';
+import 'package:flutter_video/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CameraPage(),
+      home: Home(isFromVideoPage: false,),
     );
   }
 }
